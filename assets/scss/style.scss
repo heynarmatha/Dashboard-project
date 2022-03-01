@@ -6,7 +6,9 @@
 
 body{
     background-color: whitesmoke;
+    font-family: 'Inter', sans-serif;
 }
+
 .tasks-section-wrapper{
     padding: 15px;
     @include media-min-md{
@@ -98,7 +100,7 @@ body{
             }
         }
         .count{
-            color: rgb(12,201,187) !important;
+            color: rgb(255,35,102) !important;
         }
     }
     .total-task-section-four{
@@ -116,6 +118,7 @@ body{
         }
     }
 }
+
 .total-section-wrapper{
     padding: 15px;
     @include media-min-md{
@@ -161,6 +164,7 @@ body{
         }
     }
 }
+
 .total-grapy-wrapper{
     padding: 15px;
     @include media-min-md{
@@ -176,7 +180,7 @@ body{
     }
     .total-grapy-section{
         padding: 10px;
-        .total-grapy-content{
+        .total-grapy-content{ 
             border-radius: 15px;
             background-color: white;
             padding: 30px 20px;
@@ -201,35 +205,126 @@ body{
         }
     }
 }
-.best-seller-wrapper{
-    padding: 15px;
-    .best-seller-section{
-        padding: 10px;
-        .best-seller-content{
-            border-radius: 15px;
-            background-color: white;
-            h3{
-                padding: 20px;
-                color: gray;
-                font-weight: 300;
-                border-bottom: 1px solid grey;
-            }
-            .progress-section{
-                padding: 20px;
-                display: flex;
-                .seller-images{
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 15px;
-                    object-fit: cover;
+
+.seller-section-overall-wrapper{
+    @include media-min-lg-x{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @include media-min-xl-x{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .best-seller-wrapper{
+        margin: 20px;
+        border-radius: 15px;
+        background-color: white;
+        .best-seller-section{
+            padding: 10px;
+            .best-seller-content{
+                h3{
+                    padding: 15px;
+                    color: gray;
+                    font-weight: 500;
+                    border-bottom: 1px solid grey;
                 }
-                .progress-section-content{
-                    margin-left: 10px;
-                    .progress{
-                        // padding: 0 10px;     
-                        progress{
-                            height: 12px;
+                .overall-progress-section{
+                    padding: 1rem 0;
+                    .progress-section{
+                        padding: 15px;
+                        display: grid;
+                        grid-template-columns: 1fr 2fr;
+                        @include media-min-md{
+                            grid-template-columns: 1fr 6fr;
+                        }
+                        .images{
+                            .seller-images{
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 15px;
+                                object-fit: cover;
+                            }
+                        }
+                        .progress-section-content{
+                            margin-left: 10px;
+                            h4{
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+                            .progress-container{
+                                .pro-bar{
+                                    padding: 8px 0;
+                                    .progress{
+                                        width: 100%;
+                                        height: 6px;
+                                        background: rgba(128, 128, 128, 0.637);
+                                        border-radius: 5px;
+                                        .progress-bar{
+                                            height: 100%;
+                                            border-radius: 5px;
+                                            background: rgb(71,145,255);
+                                            width: 75%;
+                                        }
+                                    }
+                                }
+                                h5{
+                                    color: gray;
+                                    padding: px 0;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .seller-wrapper{
+        margin: 20px;
+        border-radius: 15px;
+        background-color: white;
+        .seller-section{
+            padding: 10px;
+            .seller-content{
+                h3{
+                    padding: 15px;
+                    color: gray;
+                    font-weight: 500;
+                    border-bottom: 1px solid grey;
+                }
+                .overall-wrapper{
+                    padding: 1rem 0;
+                    .overall-details{
+                        padding: 15px;
+                        .short-detail-seller{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            h4{
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+                            h5{
+                                color: grey;
+                                font-weight: 500;
+                            }
+                        }
+                        .progress-overall{
+                            padding: 15px 0;
                             width: 100%;
+                            .progress{
+                                width: 100%;
+                                height: 6px;
+                                background: rgba(128, 128, 128, 0.637);
+                                border-radius: 5px;
+                                .progress-bar{
+                                    height: 100%;
+                                    border-radius: 5px;
+                                    background: rgb(71,145,255);
+                                    width: 75%;
+                                }
+                            }
                         }
                     }
                 }

@@ -7,6 +7,9 @@
     <title>DashBoard</title>
     <link rel="stylesheet" href="./public/css/style.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -60,7 +63,7 @@
                         <i class='bx bx-task task' ></i>
                     </div>
                     <div class="total-task-content">
-                        <h3>Completed Tasks</h3>
+                        <h3>Completed</h3>
                         <h1>7</h1>
                     </div>
                 </div>
@@ -142,24 +145,146 @@
         </div>
     </section>
 
-    <section class="best-seller-wrapper">
-        <div class="best-seller-section">
-            <div class="best-seller-content">
-                <h3>Best Sellers</h3>
-                <div class="progress-section">
-                    <div>
-                        <img src="./public/images/shampoo image.jpg" alt="shampoo" class="seller-images"> 
-                    </div>
-                    <div class="progress-section-content">
-                        <h4>Bathing Shampoo</h4>
-                        <div class="progress">
-                            <progress id="file" max="100" value="60"></progress>
+    <section class="seller-section-overall-wrapper">
+
+        <section class="best-seller-wrapper">
+            <div class="best-seller-section">
+                <div class="best-seller-content">
+                    <h3>Best Sellers</h3>
+                    <div class="overall-progress-section">
+                        <div class="progress-section">
+                            <div class="images">
+                                <img src="./public/images/shampoo image.jpg" alt="shampoo" class="seller-images"> 
+                            </div>
+                            <div class="progress-section-content">
+                                <h4>Bathing Shampoo</h4>
+                                <div class="progress-container">
+                                    <div class="pro-bar">
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                    </div>
+                                    <h5>80,451 Sales</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-section">
+                            <div class="images">
+                                <img src="./public/images/Bathing Shampoo.jpg" alt="shampoo" class="seller-images"> 
+                            </div>
+                            <div class="progress-section-content">
+                                <h4>Bathing Shampoo</h4>
+                                <div class="progress-container">
+                                    <div class="pro-bar">
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                    </div>
+                                    <h5>15,451 Sales</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-section">
+                            <div class="images">
+                                <img src="./public/images/Running Shoes.jpg" alt="shampoo" class="seller-images"> 
+                            </div>
+                            <div class="progress-section-content">
+                                <h4>Running Shoes</h4>
+                                <div class="progress-container">
+                                    <div class="pro-bar">
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                    </div>
+                                    <h5>11,451 Sales</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-section">
+                            <div class="images">
+                                <img src="./public/images/Toilet papers.jpg" alt="shampoo" class="seller-images"> 
+                            </div>
+                            <div class="progress-section-content">
+                                <h4>Toilet Papers</h4>
+                                <div class="progress-container">
+                                    <div class="pro-bar">
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div>
+                                    </div>
+                                    <h5>11,451 Sales</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <section class="seller-wrapper">
+            <div class="seller-section">
+                <div class="seller-content">
+                    <h3>Best Sellers</h3>
+                    <div class="overall-wrapper">
+                        <div class="overall-details">
+                            <div class="short-detail-seller">
+                                <h4>Bathing Shampoo</h4>
+                                <h5>80,451 Sales</h5>
+                            </div>
+                            <div class="progress-overall">
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overall-details">
+                            <div class="short-detail-seller">
+                                <h4>Bathing Shampoo</h4>
+                                <h5>15,451 Sales</h5>
+                            </div>
+                            <div class="progress-overall">
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overall-details">
+                            <div class="short-detail-seller">
+                                <h4>Running Shoes</h4>
+                                <h5>11,451 Sales</h5>
+                            </div>
+                            <div class="progress-overall">
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overall-details">
+                            <div class="short-detail-seller">
+                                <h4>Toilet papers</h4>
+                                <h5>11,451 Sales</h5>
+                            </div>
+                            <div class="progress-overall">
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overall-details">
+                            <div class="short-detail-seller">
+                                <h4>Handsanitizer</h4>
+                                <h5>11,451 Sales</h5>
+                            </div>
+                            <div class="progress-overall">
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 </html>
