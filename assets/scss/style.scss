@@ -9,13 +9,17 @@ body{
 }
 .tasks-section-wrapper{
     padding: 15px;
-    // margin-top: 2rem;
+    margin-top: 2rem;
     @include media-min-md{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
     @include media-min-xl{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @include media-min-xl-x{
+        width: 80%;
+        margin: 0 auto;
     }
     .total-task-section-one{
         padding: 10px;
