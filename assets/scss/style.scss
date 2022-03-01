@@ -1,0 +1,111 @@
+@import './abstracts/variable';
+@import './mixins/breakpoints';
+@import './abstracts/common';
+@import './includes/header';
+@import './includes/footer';
+
+body{
+    background-color: whitesmoke;
+}
+.tasks-section-wrapper{
+    padding: 15px;
+    // margin-top: 2rem;
+    @include media-min-md{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @include media-min-xl{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .total-task-section-one{
+        padding: 10px;
+        .total-task{
+            border-radius: 15px;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .content{
+                display: flex;
+                .icon-task{
+                    background-color: rgb(224,236,255);
+                    border-radius: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .task{
+                        padding: 10px;
+                        color: rgb(71,145,255);
+                        font-size: 35px;
+                    }
+                }
+                .total-task-content{
+                    margin-left: 15px;
+                    h3{
+                        color: grey;
+                        font-weight: 300;
+                        font-size: 15px;
+                        padding-bottom: 8px;
+                        @include media-min-sm{
+                            font-size: 20px;
+                        }
+                    }
+                    h1{
+                        font-size: 25px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .count{
+                color: rgb(255,46,127);
+                font-size: 15px;
+                @include media-min-sm{
+                    font-size:18px;
+                }
+            }
+        }
+    }
+    .total-task-section-two{
+        .content{
+            .icon-task{
+                background-color: rgb(255,248,226) !important;
+                .task{
+                    color: rgb(255,217,80)!important;
+                }
+            }
+        }
+        .count{
+            color: rgb(12,201,187) !important;
+        }
+        @extend .total-task-section-one;
+    }
+    .total-task-section-three{
+        @extend .total-task-section-one;
+        .content{
+            .icon-task{
+                background-color: rgb(255,218,229) !important;
+                .task{
+                    color: rgb(255,35,102)!important;
+                }
+            }
+        }
+        .count{
+            color: rgb(12,201,187) !important;
+        }
+    }
+    .total-task-section-four{
+        @extend .total-task-section-one;
+        .content{
+            .icon-task{
+                background-color: rgb(213,243,232) !important;
+                .task{
+                    color: rgb(2,188,119)!important;
+                }
+            }
+        }
+        .count{
+            color: rgb(12,201,187) !important;
+        }
+    }
+}
