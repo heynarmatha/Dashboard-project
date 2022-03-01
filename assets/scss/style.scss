@@ -28,6 +28,7 @@ body{
         .total-task{
             border-radius: 15px;
             background-color: white;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
             padding: 20px;
             display: flex;
             align-items: center;
@@ -137,6 +138,7 @@ body{
         .total-sales-content{
             border-radius: 15px;
             background-color: white;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
             h3{
                 color: grey;
                 padding: 20px; 
@@ -183,6 +185,7 @@ body{
         .total-grapy-content{ 
             border-radius: 15px;
             background-color: white;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
             padding: 30px 20px;
             h3{
                 color: grey;
@@ -219,6 +222,7 @@ body{
         margin: 20px;
         border-radius: 15px;
         background-color: white;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
         .best-seller-section{
             padding: 10px;
             .best-seller-content{
@@ -284,6 +288,7 @@ body{
         margin: 20px;
         border-radius: 15px;
         background-color: white;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
         .seller-section{
             padding: 10px;
             .seller-content{
@@ -325,6 +330,128 @@ body{
                                     width: 75%;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table-section-wrapper{
+    display: none;
+    @include media-min-lg{
+        display: block;
+        padding: 20px;
+        @include media-min-xl-x{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .table-section-container{
+            background-color: white;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+            border-radius: 15px;
+            color: grey;
+            .table-section{
+                h4{
+                    padding: 30px 20px;
+                    font-size: 18px;
+                    color: grey;
+                    font-weight: 500;
+                    border-bottom: 1px solid grey;
+                }
+            }
+            table{
+                border-collapse: collapse;
+                width: 100%;
+                td,th{
+                    padding: 25px;
+                }
+                th{
+                    // display: none;
+                    border-bottom: 1px solid grey;
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-align: left;
+                }
+                .table-image{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 20px;
+                    }
+                    h3{
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-left: 15px;
+                    }
+    
+                }
+                .view{
+                    border:1px solid grey;
+                    padding: 8px 15px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.activity-section-wrapper{
+    padding: 15px;
+    .activity-section{
+        padding: 10px;
+        .activity-feed{
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+            h3{
+                color: grey;
+                font-weight: 500;
+                font-size: 16px;
+                padding: 30px 20px;
+                border-bottom: 1px solid grey;
+            }
+            .activity-list-overall{
+                padding: 30px 20px;
+                .activity-list{
+                    display: flex;
+                    padding-bottom: 20px;
+                    .act-image{
+                        .user-feed{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 10px;
+                            object-fit: cover;
+                        }
+                    }
+                    .act-content{
+                        margin-left: 13px;
+                        h4{
+                            font-weight: 500;
+                            color: grey;
+                            font-size: 14px;
+                            Strong{
+                                padding: 0  10px 0 0;
+                                color: black;
+                            }
+                        }
+                        p{
+                            font-size: 13px;
+                            color: grey;
+                            padding: 8px 0;
+                        }
+                        h6{
+                            font-size: 13px;
+                            color: grey;
+                            font-weight: 500;
                         }
                     }
                 }
