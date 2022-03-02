@@ -1,3 +1,3 @@
 # Dashboard-project
 
-Deploy link : Dashborad-project.surge.sh
+Deploy link : Dashboard-project-update.surge.sh
