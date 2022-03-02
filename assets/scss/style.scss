@@ -51,11 +51,11 @@ body{
                     margin-left: 15px;
                     h3{
                         color: grey;
-                        font-weight: 300;
+                        font-weight: 400;
                         font-size: 15px;
                         padding-bottom: 8px;
                         @include media-min-sm{
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                     }
                     h1{
@@ -142,7 +142,7 @@ body{
             h3{
                 color: grey;
                 padding: 20px; 
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 20px;
                 border-bottom: 1px solid rgba(128, 128, 128, 0.733);
             }
@@ -155,12 +155,12 @@ body{
                 .sales-low{
                    color: rgb(255,46,127);
                    font-size: 20px;
-                   font-weight: 300;
+                   font-weight: 400;
                 }
                 .high-stats{
                     font-size: 20px;
                     color: rgb(12,201,187);
-                    font-weight: 300;
+                    font-weight: 400;
                 }
             }
         }
@@ -189,7 +189,7 @@ body{
             padding: 30px 20px;
             h3{
                 color: grey;
-                font-weight: 300;
+                font-weight: 400;
                 padding-bottom: 8px;
                 font-size: 20px;
             }
@@ -203,6 +203,7 @@ body{
                 align-items: center;
                 .high-total{
                     color: rgb(12,201,187);
+                    font-weight: 400;
                 }
             }
         }
@@ -368,7 +369,6 @@ body{
                     padding: 25px;
                 }
                 th{
-                    // display: none;
                     border-bottom: 1px solid grey;
                     font-weight: 500;
                     font-size: 18px;
@@ -381,6 +381,7 @@ body{
                         width: 70px;
                         height: 70px;
                         border-radius: 20px;
+                        object-fit: cover;
                     }
                     h3{
                         font-size: 16px;
@@ -403,55 +404,217 @@ body{
         }
     }
 }
-
-.activity-section-wrapper{
-    padding: 15px;
-    .activity-section{
-        padding: 10px;
-        .activity-feed{
-            border-radius: 15px;
-            background-color: white;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-            h3{
-                color: grey;
-                font-weight: 500;
-                font-size: 16px;
-                padding: 30px 20px;
-                border-bottom: 1px solid grey;
-            }
-            .activity-list-overall{
-                padding: 30px 20px;
-                .activity-list{
-                    display: flex;
-                    padding-bottom: 20px;
-                    .act-image{
-                        .user-feed{
-                            width: 60px;
-                            height: 60px;
-                            border-radius: 10px;
-                            object-fit: cover;
-                        }
-                    }
-                    .act-content{
-                        margin-left: 13px;
-                        h4{
-                            font-weight: 500;
-                            color: grey;
-                            font-size: 14px;
-                            Strong{
-                                padding: 0  10px 0 0;
-                                color: black;
+.overall-task-activity{
+    @include media-min-xl{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @include media-min-xl-x{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .activity-section-wrapper{
+        margin: 15px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        .activity-section{
+            padding: 10px;
+            .activity-feed{
+                h3{
+                    color: grey;
+                    font-weight: 500;
+                    font-size: 16px;
+                    padding: 30px 20px;
+                    border-bottom: 1px solid grey;
+                }
+                .activity-list-overall{
+                    padding: 30px 20px;
+                    .activity-list{
+                        display: flex;
+                        padding-bottom: 20px;
+                        .act-image{
+                            .user-feed{
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 10px;
+                                object-fit: cover;
                             }
                         }
-                        p{
-                            font-size: 13px;
-                            color: grey;
-                            padding: 8px 0;
+                        .act-content{
+                            margin-left: 13px;
+                            .act-name{
+                                font-weight: 500;
+                                color: grey;
+                                font-size: 15px;
+                                @include media-min-xl{
+                                    font-size: 18px;
+                                }
+                            }
+                            Strong{
+                                color: black;
+                            }
+                            .user-name{
+                                color: black;
+                                font-weight: 600;
+                                @include media-min-xl{
+                                    font-size: 18px;
+                                }
+                            }
+                            p{
+                                font-size: 15px;
+                                color: grey;
+                                padding: 8px 0;
+                            }
+                            h6{
+                                font-size: 13px;
+                                color: grey;
+                                font-weight: 500;
+                            }
                         }
-                        h6{
-                            font-size: 13px;
-                            color: grey;
-                            font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    
+    .Task-wrapper{
+        margin: 15px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        .task-section{
+            padding: 10px;
+            .task{
+                h4{
+                    padding: 30px 20px;
+                    font-size: 18px;
+                    color: grey;
+                    font-weight: 500;
+                    border-bottom: 1px solid grey;
+                }
+                .task-list{
+                    padding: 20px 0;
+                    line-height: 1.5;
+                    @include media-min-xl{
+                        padding: 2rem 0;
+                    }
+                    .task-bar-one{
+                        padding: 0 20px 2px ;
+                        .list{
+                            display: flex;
+                            .line{
+                                display: flex;
+                                align-items: center;
+                                .blue-line{
+                                    height: 100%;
+                                    width: 5px;
+                                    background-color: rgb(71,145,255);
+                                    border-radius: 99px;
+                                }
+                            }
+                            .content-main{
+                                display: flex;
+                                align-items: center;
+                                .list-content{
+                                    margin-left: 10px;
+                                    display: block;
+                                    margin-bottom: 15px;
+                                    display: flex;
+                                    input {
+                                        padding: 0;
+                                        height: initial;
+                                        width: initial;
+                                        margin-bottom: 0;
+                                        display: none;
+                                        cursor: pointer;
+                                    }
+                                    label {
+                                        position: relative;
+                                        cursor: pointer;
+                                        background-color: transparent;
+                                        border: 2px solid rgb(71,145,255);
+                                        background-color: rgb(71,145,255);
+                                        border-radius: 5px;
+                                        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+                                        padding: 15px;
+                                        display: inline-block;
+                                        position: relative;
+                                        vertical-align: middle;
+                                        cursor: pointer;
+                                        margin-right: 5px;
+                                        height: 20px;
+                                        overflow: hidden;
+                                        &:before {
+                                            content: '';
+                                            display: block;
+                                            position: absolute;
+                                            top: 5px;
+                                            left: 12px;
+                                            width: 6px;
+                                            height: 14px;
+                                            border: solid white;
+                                            border-width: 0 2px 2px 0;
+                                            transform: rotate(45deg);
+                                        }
+                                    }
+                                }
+                                h5{
+                                    color: grey;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    margin-left: 8px;
+                                    padding: 5px 0;
+                                    @include media-min-md{
+                                        font-size: 18px
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .task-bar-two{
+                        @extend .task-bar-one;
+                        .blue-line{
+                            background-color: rgb(255,217,80) !important;
+                        }
+                    }
+                    .task-bar-three{
+                        @extend .task-bar-one;
+                        .blue-line{
+                            background-color: rgb(159,159,159) !important;
+                        }
+                        label {
+                            border: 2px solid rgba(128, 128, 128, 0.027) !important;
+                            background-color: rgba(128, 128, 128, 0.411) !important;
+                            &:before {
+                               all: unset !important;
+                            }
+                        }
+                    }
+                    .task-bar-four{
+                        @extend .task-bar-one;
+                        .blue-line{
+                            background-color: rgb(2,188,119) !important;
+                        }
+                        label {
+                            border: 2px solid rgba(128, 128, 128, 0.027) !important;
+                            background-color: rgba(128, 128, 128, 0.411) !important;
+                            &:before {
+                               all: unset !important;
+                            }
+                        }
+                    }
+                    .task-bar-five{
+                        @extend .task-bar-one;
+                        .blue-line{
+                            background-color: rgb(255,35,102) !important;
+                        }
+                        label {
+                            border: 2px solid rgba(128, 128, 128, 0.027) !important;
+                            background-color: rgba(128, 128, 128, 0.411) !important;
+                            &:before {
+                               all: unset !important;
+                            }
                         }
                     }
                 }
