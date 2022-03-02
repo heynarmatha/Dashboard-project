@@ -29,7 +29,7 @@ body{
             border-radius: 15px;
             background-color: white;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-            padding: 20px;
+            padding: 20px 10px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -70,9 +70,9 @@ body{
                 @include media-min-sm{
                     font-size:18px;
                 }
-                @include media-min-md{
-                    padding: 0 15px;
-                }
+                // @include media-min-md{
+                //     padding: 0 10px;
+                // }
             }
         }
     }
@@ -470,6 +470,9 @@ body{
                                 font-size: 13px;
                                 color: grey;
                                 font-weight: 500;
+                                @include media-min-xl{
+                                    font-size: 15px;
+                                }
                             }
                         }
                     }
